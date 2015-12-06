@@ -17,7 +17,8 @@ namespace AdventDay1
             string santaCode = inputString[0];
 
             Console.WriteLine($"Ending Floor: {ElevatorV1(santaCode)}");
-            Console.WriteLine($"Basement Move: {ElevatorV2(santaCode)}");        
+            Console.WriteLine($"Basement Move: {ElevatorV2(santaCode)}");
+            Console.Write("Press any key to continue...");
             Console.ReadLine();
 
         }
@@ -58,7 +59,7 @@ namespace AdventDay1
                 if (count < 0)
                 {
                     //break;
-                    return i;
+                    return i+1;
                 }                
             }
             return -1;

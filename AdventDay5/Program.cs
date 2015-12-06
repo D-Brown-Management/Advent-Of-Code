@@ -14,56 +14,74 @@ namespace AdventDay5
     {
         static void Main(string[] args)
         {
-            var lines = File.ReadLines(@"C:\users\steve\desktop\input_day5.txt");
-
-            int counter = lines.Count(line => NaughtyOrNiceV2(line));
-            //var output = NaughtyOrNiceV2("ieodomkazucvgmuy");
-            Console.WriteLine($"{counter}");
+            var lines = File.ReadLines(@"input.txt");
+            
+            Console.WriteLine($"Nice List V1: {NaughtyOrNiceV1(lines)}");
+            Console.WriteLine($"Nice List V2: {NaughtyOrNiceV2(lines)}");
+            Console.Write("Press any key to continue...");
+            Console.ReadLine();
         }
 
 
-        static bool NaughtyOrNiceV1(string input)
+        static int NaughtyOrNiceV1(IEnumerable<string> inputLines)
         {
-            var repeatingTwo = false;
-            var vowelThree = false;
-
-            if (Regex.IsMatch(input, "(ab|cd|pq|xy)"))
+            int count = 0;
+            foreach (var input in inputLines)
             {
-                // not nice bail out
-                return false;
-            }
+                var repeatingTwo = false;
+                var vowelThree = false;
 
-            if (Regex.IsMatch(input, @"([a-zA-Z])\1"))
-            {
-                repeatingTwo = true;
+                if (Regex.IsMatch(input, "(ab|cd|pq|xy)"))
+                {
+                    continue;
+                }
+
+                if (Regex.IsMatch(input, @"([a-zA-Z])\1"))
+                {
+                    repeatingTwo = true;
+                }
+
+                var matches = Regex.Matches(input, "[aeiou]");
+                if (matches.Count > 2)
+                {
+                    vowelThree = true;
+                }
+
+                if (repeatingTwo && vowelThree)
+                {
+                    count++;
+                }
             }
             
-            var matches = Regex.Matches(input, "[aeiou]");
-            if (matches.Count > 2)
-            {
-                vowelThree = true;
-            }
-
-
-            return repeatingTwo && vowelThree;
+            return count;
         }
 
-        static bool NaughtyOrNiceV2(string input)
+        static int NaughtyOrNiceV2(IEnumerable<string> inputLines)
         {
-            bool overlappingPair = false;
-            bool repeatBetween = false;
-
-            if (Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])\w).*\k<rpt>"))
+            int count = 0;
+            foreach (var input in inputLines)
             {
-                overlappingPair = true;
+                bool overlappingPair = false;
+                bool repeatBetween = false;
+
+                if (Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])\w).*\k<rpt>"))
+                {
+                    overlappingPair = true;
+                }
+
+                if (Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])).{1}\k<rpt>"))
+                {
+                    repeatBetween = true;
+                }
+
+                if (overlappingPair && repeatBetween)
+                {
+                    count++;
+                }
             }
 
-            if (Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])).{1}\k<rpt>"))
-            {
-                repeatBetween = true;
-            }
-
-            return overlappingPair && repeatBetween;
+            return count;
+            
         }
     }
 }

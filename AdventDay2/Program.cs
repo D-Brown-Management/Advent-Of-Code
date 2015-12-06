@@ -18,7 +18,7 @@ namespace AdventDay2
             //                                  = 58 sqft
             int totalSqft = 0;
             int totalRibbon = 0;
-            var input = File.ReadLines(@"c:\users\steve\desktop\input5.txt");
+            var input = File.ReadLines("input.txt");
             foreach (string boxLine in input)
             {
                 int length, width, height;
@@ -56,6 +56,8 @@ namespace AdventDay2
 
             Console.WriteLine($"The total sqft was {totalSqft}");
             Console.WriteLine($"The total ribbon was {totalRibbon}");
+            Console.Write("Press any key to continue...");
+            Console.ReadLine();
         }
     }
 }
