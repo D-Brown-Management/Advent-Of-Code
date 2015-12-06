@@ -46,8 +46,8 @@ namespace AdventDay2
 
                 int sqFt = 2*(length*width) + 2*(width*height) + 2*(height*length) + sideArea[0];
                 int ribbonLength = sidePerimeter[0] + presentVolume;
-                Console.WriteLine($"The Sqft for a package {length}x{width}x{height} is {sqFt}");
-                Console.WriteLine($"The ribbon for a package {length}x{width}x{height} is {ribbonLength}");
+                //Console.WriteLine($"The Sqft for a package {length}x{width}x{height} is {sqFt}");
+                //Console.WriteLine($"The ribbon for a package {length}x{width}x{height} is {ribbonLength}");
                 totalSqft += sqFt;
 
                 
