@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>83809aa5-c8d3-469f-9261-09aeb3f3dc62</ProjectGuid>
+    <ProjectGuid>46ebcaa7-d733-4c2e-9934-e137c406d7df</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AdventDay3FSharp</RootNamespace>
-    <AssemblyName>AdventDay3FSharp</AssemblyName>
+    <RootNamespace>AdventDay1FSharp</RootNamespace>
+    <AssemblyName>AdventDay1FSharp</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
-    <Name>AdventDay3FSharp</Name>
+    <Name>AdventDay1FS</Name>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -24,7 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\AdventDay3FSharp.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\AdventDay1FSharp.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -35,7 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\AdventDay3FSharp.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\AdventDay1FSharp.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>

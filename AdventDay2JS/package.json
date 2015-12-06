@@ -1,0 +1,10 @@
+{
+  "name": "AdventDay2JS",
+  "version": "0.0.0",
+  "description": "AdventDay2JS",
+  "main": "app.js",
+  "author": {
+    "name": "steve",
+    "email": ""
+  }
+}

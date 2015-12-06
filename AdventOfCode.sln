@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay5", "AdventDay5\AdventDay5.csproj", "{B5730AB0-A014-4C26-BE35-A4CF4329EF2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay5CS", "AdventDay5\AdventDay5CS.csproj", "{B5730AB0-A014-4C26-BE35-A4CF4329EF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay1", "AdventDay1\AdventDay1.csproj", "{F3F03189-15D0-4D50-8112-F7CEB2C794F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay1CS", "AdventDay1\AdventDay1CS.csproj", "{F3F03189-15D0-4D50-8112-F7CEB2C794F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay2", "AdventDay2\AdventDay2.csproj", "{6D28E930-EC77-4730-A585-70E9CEF70A43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay2CS", "AdventDay2\AdventDay2CS.csproj", "{6D28E930-EC77-4730-A585-70E9CEF70A43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay3", "AdventDay3\AdventDay3.csproj", "{170016CF-6907-4868-84C0-794CCF133CD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay3CS", "AdventDay3\AdventDay3CS.csproj", "{170016CF-6907-4868-84C0-794CCF133CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay4", "AdventDay4\AdventDay4.csproj", "{9700BDC0-CE72-46C2-B56C-F5F263FEDD25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay4CS", "AdventDay4\AdventDay4CS.csproj", "{9700BDC0-CE72-46C2-B56C-F5F263FEDD25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay6", "AdventDay6\AdventDay6.csproj", "{3C9561BF-6D2A-4F76-BB66-6C9234DEBA78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay6CS", "AdventDay6\AdventDay6CS.csproj", "{3C9561BF-6D2A-4F76-BB66-6C9234DEBA78}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay1FSharp", "AdventDay1FSharp\AdventDay1FSharp.fsproj", "{46EBCAA7-D733-4C2E-9934-E137C406D7DF}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay1FS", "AdventDay1FSharp\AdventDay1FS.fsproj", "{46EBCAA7-D733-4C2E-9934-E137C406D7DF}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay2FSharp", "AdventDay2FSharp\AdventDay2FSharp.fsproj", "{95A823C1-AC72-414A-9B57-A3EC95563E44}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay2FS", "AdventDay2FSharp\AdventDay2FS.fsproj", "{95A823C1-AC72-414A-9B57-A3EC95563E44}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay3FSharp", "AdventDay3FSharp\AdventDay3FSharp.fsproj", "{83809AA5-C8D3-469F-9261-09AEB3F3DC62}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay3FS", "AdventDay3FSharp\AdventDay3FS.fsproj", "{83809AA5-C8D3-469F-9261-09AEB3F3DC62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CC66558-A98D-4BD2-9479-246D567A6A98}"
 	ProjectSection(SolutionItems) = preProject
@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AdventDay1JS", "AdventDay1JS\AdventDay1JS.njsproj", "{73D129C9-6765-47AD-B970-89E043B90140}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AdventDay2JS", "AdventDay2JS\AdventDay2JS.njsproj", "{7214E5A2-330F-4329-9F8D-566715F7356F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{73D129C9-6765-47AD-B970-89E043B90140}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D129C9-6765-47AD-B970-89E043B90140}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D129C9-6765-47AD-B970-89E043B90140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7214E5A2-330F-4329-9F8D-566715F7356F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7214E5A2-330F-4329-9F8D-566715F7356F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7214E5A2-330F-4329-9F8D-566715F7356F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7214E5A2-330F-4329-9F8D-566715F7356F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
