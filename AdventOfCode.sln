@@ -21,6 +21,11 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay2FSharp", "AdventD
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventDay3FSharp", "AdventDay3FSharp\AdventDay3FSharp.fsproj", "{83809AA5-C8D3-469F-9261-09AEB3F3DC62}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CC66558-A98D-4BD2-9479-246D567A6A98}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
