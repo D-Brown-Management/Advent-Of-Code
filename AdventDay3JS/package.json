@@ -1,0 +1,13 @@
+{
+  "name": "AdventDay3JS",
+  "version": "0.0.0",
+  "description": "AdventDay3JS",
+  "main": "app.js",
+  "author": {
+    "name": "steve",
+    "email": ""
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
