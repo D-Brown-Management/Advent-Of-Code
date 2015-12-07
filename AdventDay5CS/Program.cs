@@ -35,18 +35,10 @@ namespace AdventDay5
                 {
                     continue;
                 }
-
-                if (Regex.IsMatch(input, @"([a-zA-Z])\1"))
-                {
-                    repeatingTwo = true;
-                }
-
-                var matches = Regex.Matches(input, "[aeiou]");
-                if (matches.Count > 2)
-                {
-                    vowelThree = true;
-                }
-
+                
+                repeatingTwo = Regex.IsMatch(input, @"([a-zA-Z])\1");
+                vowelThree = Regex.Matches(input, "[aeiou]").Count > 2;
+                
                 if (repeatingTwo && vowelThree)
                 {
                     count++;
@@ -63,17 +55,10 @@ namespace AdventDay5
             {
                 bool overlappingPair = false;
                 bool repeatBetween = false;
-
-                if (Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])\w).*\k<rpt>"))
-                {
-                    overlappingPair = true;
-                }
-
-                if (Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])).{1}\k<rpt>"))
-                {
-                    repeatBetween = true;
-                }
-
+                
+                overlappingPair = Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])\w).*\k<rpt>");
+                repeatBetween = Regex.IsMatch(input, @"^.*(?<rpt>([a-zA-Z])).{1}\k<rpt>");
+                
                 if (overlappingPair && repeatBetween)
                 {
                     count++;
