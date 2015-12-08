@@ -4,9 +4,9 @@ Here are the solutions for the advent of code challenges.
 Included in each solution are an input.txt with the input for the challenge and a problem.txt with the text of the challenge.
 
 ### Languages Completed
- * **C#** 7/7 challenges complete
- * **F#** 6/7 challenges complete
- * **JS** 3/7 challenges complete
+ * **C#** 8/8 challenges complete
+ * **F#** 6/8 challenges complete
+ * **JS** 3/8 challenges complete
 
 ### Tools Required
  - Visual Studio 2015

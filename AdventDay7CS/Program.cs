@@ -52,9 +52,9 @@ namespace AdventDay7CS
             foreach (string line in lines)
             {
                 var andOrMatch = Regex.Match(line, @"^(?<in1>[a-z0-9]{1,6})\s(?<op>OR|AND)\s(?<in2>[a-z0-9]{1,6})\s->\s(?<dest>[a-z]{1,6})$");
-                var shiftMatch = Regex.Match(line, @"^(?<in1>[a-z0-9]{1,6})\s(?<op>RSHIFT|LSHIFT)\s(?<amt>[0-9]{1,6})\s->\s(?<dest>[a-z]{1,6})$$");
-                var notMatch = Regex.Match(line, @"^(?<op>NOT)\s(?<in1>[a-z]{1,6})\s->\s(?<dest>[a-z]{1,6})$$");
-                var staticMatch = Regex.Match(line, @"^(?<in1>[a-z0-9]{1,6})\s->\s(?<dest>[a-z]{1,6})$$");
+                var shiftMatch = Regex.Match(line, @"^(?<in1>[a-z0-9]{1,6})\s(?<op>RSHIFT|LSHIFT)\s(?<amt>[0-9]{1,6})\s->\s(?<dest>[a-z]{1,6})$");
+                var notMatch = Regex.Match(line, @"^(?<op>NOT)\s(?<in1>[a-z]{1,6})\s->\s(?<dest>[a-z]{1,6})$");
+                var staticMatch = Regex.Match(line, @"^(?<in1>[a-z0-9]{1,6})\s->\s(?<dest>[a-z]{1,6})$");
 
                 if (andOrMatch.Success)
                 {
