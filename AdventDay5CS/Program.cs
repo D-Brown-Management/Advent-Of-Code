@@ -36,7 +36,7 @@ namespace AdventDay5
                     continue;
                 }
                 
-                repeatingTwo = Regex.IsMatch(input, @"([a-zA-Z])\1");
+                repeatingTwo = Regex.Matches(input, @"([a-z])\1").Count > 1;
                 vowelThree = Regex.Matches(input, "[aeiou]").Count > 2;
                 
                 if (repeatingTwo && vowelThree)
